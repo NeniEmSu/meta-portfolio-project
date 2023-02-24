@@ -55,7 +55,7 @@ transform: scaleX(1);
 
 .promotion {
   position: relative;
-  background-image: url('./img/Banner.png');
+  background-image: url('https://raw.githubusercontent.com/NeniEmSu/meta-portfolio-project/main/img/Banner.png');
   height: 50vh;
   width: 100%;
   background-size:cover;
@@ -89,8 +89,8 @@ button:hover {
 
 .content {
   display: flex;
-  gap: 15px;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -104,10 +104,14 @@ button:hover {
 
 footer {
   margin: 20px 0 0;
-  padding: 10px;
+  padding: 20px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: papayawhip;
+}
+
+footer img, footer p {
+  margin: 10px;
 }
