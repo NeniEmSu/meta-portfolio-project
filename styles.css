@@ -10,7 +10,7 @@ header {
   margin: 10 auto;
 }
 
-header img {
+.header-img {
   margin: 20px auto;
 }
 
@@ -25,14 +25,14 @@ li {
   flex-wrap: wrap;
 }
 
-li a {
+a {
   color: black;
   position: relative;
   text-decoration: none;
   transition: ease 350ms all;
 }
 
-li a::before {
+a::before {
 content: "";
 position: absolute;
 display: block;
@@ -45,11 +45,11 @@ transform: scaleX(0);
 transition: transform 350ms ease;
 }
 
-li a:hover {
+a:hover {
   color: orangered;
 }
 
-li a:hover::before {
+a:hover::before {
 transform: scaleX(1);
 }
 
@@ -72,7 +72,7 @@ transform: scaleX(1);
   transform: translate(0%,-50%);
 }
 
-button {
+.btn {
   border: 2px white solid;
   background-color: transparent;
   color: white;
@@ -81,11 +81,6 @@ button {
   padding: 8px 20px;
   transition: ease 350ms all;
   cursor: pointer;
-}
-
-button:hover, .card button:hover {
-  color: orangered;
-  border: 2px orangered solid;
 }
 
 .content {
@@ -103,9 +98,14 @@ button:hover, .card button:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.card button {
+.card .btn {
   color: black;
   border: 2px black solid;
+}
+
+.btn:hover {
+  color: orangered;
+  border: 2px orangered solid;
 }
 
 footer {
@@ -118,6 +118,6 @@ footer {
   background-color: papayawhip;
 }
 
-footer img, footer p {
+.footer-img, .footer-copy {
   margin: 10px;
 }
